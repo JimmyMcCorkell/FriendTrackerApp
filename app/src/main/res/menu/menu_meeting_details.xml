@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jimmy.tyler.friendtrackerapp.view.activities.MeetingDetailsActivity">
+
+    <item
+        android:id="@+id/meeting_edit"
+        android:orderInCategory="1"
+        android:title="Edit"
+        android:icon="@drawable/ic_action_edit"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/meeting_remove"
+        android:orderInCategory="2"
+        android:title="Remove"
+        android:icon="@drawable/ic_action_remove"
+        app:showAsAction="ifRoom" />
+</menu>

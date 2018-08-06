@@ -1,0 +1,222 @@
+<resources>
+    <!-- Application Values -->
+    <string name="app_name">FriendTrackerApp</string>
+    <string name="app_slogan">Connecting With Friends Made Easy</string>
+
+    <!-- API Keys -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyC-ooAIIo-pWrxdWmmQKgV9Q36E9B2pOLU</string>
+    <string name="google_distance_matrix_key" templateMergeStrategy="preserve" translatable="false">AIzaSyB0_ikm06C7kz63YFUWoKJUowMrIbpGbFQ</string>
+
+    <!-- Navigation Drawer Values -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="navgroup_main">Meetings &amp; Friends</string>
+    <string name="navgroup_secondary">Other</string>
+
+    <!-- Activity Titles -->
+    <string name="title_meeting_details">Meeting Details</string>
+    <string name="title_friend_details">Friend Details</string>
+    <string name="title_meeting_edit">Edit Meeting Details</string>
+    <string name="title_meeting_select_location">Select Location</string>
+    <string name="title_meeting_select_friend">Add Friend To Meeting</string>
+    <string name="title_friend_edit">Edit Friend Details</string>
+
+    <!-- Fragment Titles -->
+    <string name="title_map">Map</string>
+    <string name="title_meetings">Meetings</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_about">About</string>
+
+    <!-- Option Menu Titles -->
+    <string name="action_edit">Edit</string>
+    <string name="action_remove">Remove</string>
+    <string name="action_save">Save</string>
+
+    <!-- List Sorting Values -->
+    <string name="sort_az">Sorting A-Z</string>
+    <string name="sort_za">Sorting Z-A</string>
+    <string name="sort_nl">Sorting Next-Last</string>
+    <string name="sort_ln">Sorting Last-Next</string>
+
+    <!-- Permission Values -->
+    <string name="contact_permission_title">Contact Permission</string>
+    <string name="contact_permission_message">To Add A Friend From Your Contacts List We Need Your Permission.\n\nPlease Enable Access To Contacts So This Can Occur.</string>
+    <string name="contact_permission_ok">OK</string>
+
+    <string name="location_permission_title">Location Permission</string>
+    <string name="location_permission_message">To Get Your Current Location We Need Your Permission.\n\nPlease Enable Access To Location So This Can Occur.</string>
+    <string name="location_permission_ok">OK</string>
+
+    <!-- Meeting View/Edit Details Values -->
+    <string name="meeting_title_hint">Meeting Name</string>
+    <string name="meeting_location">Meeting Location</string>
+    <string name="meeting_location_hint">(Click On The Field Or Map To Select A Location)</string>
+    <string name="meeting_detail_starttime">Start Time</string>
+    <string name="meeting_detail_endtime">End Time</string>
+    <string name="meeting_details_friends">Friends</string>
+
+    <!-- Friends View Details Values -->
+    <string name="friend_details_name">Name</string>
+    <string name="friend_details_email">Email</string>
+    <string name="friend_details_birthday">Birthday</string>
+    <string name="friend_details_location">Location</string>
+    <string name="friend_details_no_location">No Known Location</string>
+
+    <!-- About Fragment Values -->
+    <string name="about_package_key">Package</string>
+    <string name="about_package_val">com.jimmy.tyler.friendtrackerapp</string>
+    <string name="about_version_key">Version</string>
+    <string name="about_version_val">v0.00.4 [Pre-Alpha]</string>
+    <string name="about_dev_key">Developers</string>
+    <string name="about_dev_val">James McCorkell &amp; Tyler Watkins</string>
+    <string name="about_disclaimer_key">Disclaimer</string>
+    <string name="about_disclaimer_val">Not For Public Release</string>
+
+    <!-- Settings Fragment Values -->
+    <string name="settings_category_meeting">Meetings</string>
+    <string name="pref_meeting_default_length_key">meeting_length</string>
+    <string name="pref_meeting_default_length_title">Default Meeting Length</string>
+
+    <string-array name="pref_list_default_length_entries">
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>5 hours</item>
+    </string-array>
+    <string-array name="pref_list_default_length_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+
+    <string name="pref_context_key">context_on</string>
+    <string name="pref_context_title">Contextual Meeting Suggestions</string>
+    <string name="pref_context_desc">Receive meeting suggestions based on nearby friends</string>
+    <string name="pref_context_list_key">context_list</string>
+    <string name="pref_context_list">Contextual Meeting Frequency</string>
+
+    <string-array name="pref_list_context_entries">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+    </string-array>
+    <string-array name="pref_list_context_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+    </string-array>
+
+    <string name="settings_category_notify">Notifications</string>
+    <string name="pref_meeting_notify_key">meeting_notify_on</string>
+    <string name="pref_meeting_notify_title">Upcoming Meeting Notifications</string>
+    <string name="pref_meeting_notify_desc">Notification when a meeting is a certain time from beginning</string>
+    <string name="pref_meeting_notify_list_key">meeting_notify_list</string>
+    <string name="pref_meeting_notify_list">Time Before Meeting Notification</string>
+
+    <string-array name="pref_list_notify_entries">
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>12 hours</item>
+        <item>1 day</item>
+        <item>2 days</item>
+    </string-array>
+    <string-array name="pref_list_notify_values">
+        <item>10</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>720</item>
+        <item>1440</item>
+        <item>2880</item>
+    </string-array>
+
+    <string name="pref_meeting_remind_list_key">meeting_remind_list</string>
+    <string name="pref_meeting_remind_list">\'Remind Me Later\' Duration</string>
+
+    <string-array name="pref_list_remind_entries">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>20 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="pref_list_remind_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="settings_category_sync">Data &amp; Sync</string>
+    <string name="pref_friend_location_key">friend_location_on</string>
+    <string name="pref_friend_location_title">Friend Location Updates</string>
+    <string name="pref_friend_location_desc">Regular map updates on friend locations</string>
+    <string name="pref_friend_location_list_key">friend_location_list</string>
+    <string name="pref_friend_location_list">Location Update Frequency</string>
+
+    <string-array name="pref_list_sync_entries">
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="pref_list_sync_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <!-- Contact Image Values -->
+    <string name="contact_image">ContactImage</string>
+    <string name="contact_image_desc">Contact Image</string>
+
+    <!-- Nearby Friend Dialog -->
+    <string name="nearby_friend_ok">OK</string>
+    <string name="nearby_friend_neutral">NO THANKS</string>
+    <string name="nearby_friend_cancel">I\'M DONE WITH SUGGESTIONS</string>
+
+    <!-- Other Values -->
+    <string name="settings_placeholder">Placeholder For Assignment 02</string>
+    <string name="location_label">Location</string>
+    <string name="friend_selection">Friend Selection</string>
+    <string name="title_activity_suggest_meeting">Suggested Meetings</string>
+</resources>

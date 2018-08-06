@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/navgroup_main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/ic_map"
+            android:title="@string/title_map" />
+        <item
+            android:id="@+id/nav_meetings"
+            android:icon="@drawable/ic_meetings"
+            android:title="@string/title_meetings" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_friends"
+            android:title="@string/title_friends" />
+    </group>
+
+    <item android:title="@string/navgroup_secondary">
+
+        <menu>
+
+            <group
+                android:id="@+id/navgroup_secondary"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="@string/title_settings" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_about"
+                    android:title="@string/title_about" />
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

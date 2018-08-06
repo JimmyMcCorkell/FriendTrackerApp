@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jimmy.tyler.friendtrackerapp.view.activities.MainActivity">
+
+    <item
+        android:id="@+id/context_friend_details"
+        android:orderInCategory="1"
+        android:title="View Details" />
+
+    <item
+        android:id="@+id/context_friend_location"
+        android:orderInCategory="1"
+        android:title="Jump To Location" />
+
+    <item
+        android:id="@+id/context_friend_edit"
+        android:orderInCategory="1"
+        android:title="Edit Details" />
+
+    <item
+        android:id="@+id/context_friend_remove"
+        android:orderInCategory="1"
+        android:title="Remove Friend" />
+
+</menu>

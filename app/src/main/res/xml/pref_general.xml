@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/settings_category_meeting">
+
+        <ListPreference
+            android:defaultValue="30"
+            android:key="@string/pref_meeting_default_length_key"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:title="@string/pref_meeting_default_length_title"
+            android:summary="%s"
+            android:entries="@array/pref_list_default_length_entries"
+            android:entryValues="@array/pref_list_default_length_values" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/pref_context_key"
+            android:title="@string/pref_context_title"
+            android:summary="@string/pref_context_desc" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:key="@string/pref_context_list_key"
+            app:dependency="@string/pref_context_key"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:title="@string/pref_context_list"
+            android:summary="%s"
+            android:entries="@array/pref_list_context_entries"
+            android:entryValues="@array/pref_list_context_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_notify">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/pref_meeting_notify_key"
+            android:title="@string/pref_meeting_notify_title"
+            android:summary="@string/pref_meeting_notify_desc" />
+
+        <ListPreference
+            android:defaultValue="10"
+            android:key="@string/pref_meeting_notify_list_key"
+            android:dependency="@string/pref_meeting_notify_key"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:title="@string/pref_meeting_notify_list"
+            android:summary="%s"
+            android:entries="@array/pref_list_notify_entries"
+            android:entryValues="@array/pref_list_notify_values" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:key="@string/pref_meeting_remind_list_key"
+            android:dependency="@string/pref_meeting_notify_key"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:title="@string/pref_meeting_remind_list"
+            android:summary="%s"
+            android:entries="@array/pref_list_remind_entries"
+            android:entryValues="@array/pref_list_remind_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/settings_category_sync">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="@string/pref_friend_location_key"
+            android:title="@string/pref_friend_location_title"
+            android:summary="@string/pref_friend_location_desc" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:key="@string/pref_friend_location_list_key"
+            android:dependency="@string/pref_friend_location_key"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:title="@string/pref_friend_location_list"
+            android:summary="%s"
+            android:entries="@array/pref_list_sync_entries"
+            android:entryValues="@array/pref_list_sync_values" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
